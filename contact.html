@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<title>Contact</title>
+				<meta charset="UTF-8">
+				<link href="myStyles.css" rel="stylesheet" style="text/css">
+				<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<script src="myScripts.js"></script>
+		</head>
+		<body oncontextmenu="return warning();">
+				<header>
+					<h1><a href="index.html">Design to Inspire</a></h1>
+				</header>
+
+		<nav>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div id="contact">
+				<img src="./images/contactimage.jpeg" alt="contact" width="1024" height="500">
+				<div class="contact-title">Contact</div>
+		</div>
+
+		<form class="contact-form" action="contact.php" method="post">
+			<div>
+				<label for="fullname">Name</label>
+					<input name="name" type="text" id="fullname" size="25" placeholder="Enter name here" required/>
+			</div>
+			<br>
+			<div>
+				<label for="email">Email</label>
+					<input name="email" type="email" size="25" id="email" placeholder="Enter email here" required/>
+			</div>
+			<br>
+			<div>
+				<label for="phone">Phone Number (Format: XXX-YYY-ZZZZ)</label><br>
+					<input name="phone" type="tel" size="25" id="phone" placeholder="Enter Phone Number here" pattern="^\d{3}-\d{3}-\d{4}$" required/>
+			</div>
+			<br>
+			<div>
+				<label for="msg">Message</label>
+					<textarea name="msg" id="msg" placeholder="Enter message here" required></textarea>
+			</div>
+			<br>
+				<input type="submit" name="send" value="Submit">
+		</form>
+
+		<aside>
+				<div class="contact">
+					<h2>Phone:</h2>&nbsp;<p>1-800-123-4567</p>&nbsp;&nbsp;&nbsp;&nbsp;
+					<h2>Email:</h2>&nbsp;<p>designtoinspire@email.com</p>
+					<h2>Address:</h2>&nbsp;<p>123 Main Street, Halifax, Nova Scotia, Canada</p>
+					<br>
+					<h2>Mon-Fri:</h2>&nbsp;<p>8am-5pm</p>&nbsp;&nbsp;&nbsp;&nbsp;
+					<h2>Sat-Sun:</h2>&nbsp;<p>12pm-5pm</p>
+				</div>
+		</aside>
+
+		<footer>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+		</footer>
+	</body>
+</html>
